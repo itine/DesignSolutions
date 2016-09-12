@@ -1,0 +1,13 @@
+c:\users\alexe\onedrive\documents\visual studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\DesignSolutinsProject.exe.config
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.CreateContract.resources
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.MainForm.resources
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.Properties.Resources.resources
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.csproj.GenerateResource.Cache
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\DesignSolutinsProject.exe
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\DesignSolutinsProject.pdb
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\MySql.Data.dll
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.exe
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.pdb
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\obj\Debug\DesignSolutinsProject.csprojResolveAssemblyReference.cache
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\System.Net.Http.dll
+C:\Users\alexe\OneDrive\Documents\Visual Studio 2015\Projects\DesignSolutinsProject\DesignSolutinsProject\bin\Debug\System.Net.Http.xml
