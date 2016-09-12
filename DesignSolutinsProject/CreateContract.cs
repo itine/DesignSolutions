@@ -421,7 +421,7 @@ namespace DesignSolutinsProject
                 {
                     con.Open();
                     string dateNow = DateTime.Now.ToString("dd/MM/yyyy");
-                    string Query = "insert into contract (docNumber,organizationName,inicial,projectObject,dateOfDocument,totalCost,daysForCompleted,orgCity, orgClient, reglamDoc, whatTheWork, prepayment, numberOfObject, orgAddress, orgInn, orgKpp, whatTheWorkForSchet,paymentAddress, phoneNumber, projectStudy, constructionTime, rSchet, kSchet) values (@docNumber,@organizationName,@inicial,@projectObject,@dateOfDocument,@totalCost,@daysForCompleted,@orgCity, @orgClient, @reglamDoc, @whatTheWork, @prepayment, @numberOfObject, @orgAddress, @orgInn, @orgKpp,@whatTheWorkForSchet,@paymentAddress, @phoneNumber, @projectStudy, @constructionTime, @rSchet, @kSchet)";
+                    string Query = "insert into contract (docNumber,organizationName,inicial,projectObject,dateOfDocument,totalCost,daysForCompleted,orgCity, orgClient, reglamDoc, whatTheWork, prepayment, numberOfObject, orgAddress, orgInn, orgKpp, whatTheWorkForSchet,paymentAddress, phoneNumber, projectStudy, constructionTime, rSchet, kSchet, pochta) values (@docNumber,@organizationName,@inicial,@projectObject,@dateOfDocument,@totalCost,@daysForCompleted,@orgCity, @orgClient, @reglamDoc, @whatTheWork, @prepayment, @numberOfObject, @orgAddress, @orgInn, @orgKpp,@whatTheWorkForSchet,@paymentAddress, @phoneNumber, @projectStudy, @constructionTime, @rSchet, @kSchet,@pochta)";
                     MySqlCommand command = new MySqlCommand(Query, con);
                     command.Parameters.AddWithValue("@dateOfDocument", dateNow);
                    
@@ -459,7 +459,7 @@ namespace DesignSolutinsProject
                     object pochta = "@@pochta";
                     replaceParam1111 = textBox24.Text;
                     Word.Range wordRange1112;
-
+                    command.Parameters.AddWithValue("@pochta", textBox24.Text);
                     object replaceTypeObj1112;
                     replaceTypeObj1112 = Word.WdReplace.wdReplaceAll;
                     for (int i = 1; i <= document.Sections.Count; i++)
@@ -1069,7 +1069,7 @@ namespace DesignSolutinsProject
             try
             {
                 con.Open();
-                string Query = "select distinct docNumber,whatTheWork,organizationName,inicial,projectObject,totalCost,daysForCompleted,orgCity, orgClient, reglamDoc, prepayment, numberOfObject, orgAddress, orgInn, orgKpp, paymentAddress, phoneNumber, projectStudy, constructionTime, rSchet, kSchet, whatTheWorkForSchet from contract where organizationName = @organizationName";
+                string Query = "select distinct docNumber,whatTheWork,organizationName,inicial,projectObject,totalCost,daysForCompleted,orgCity, orgClient, reglamDoc, prepayment, numberOfObject, orgAddress, orgInn, orgKpp, paymentAddress, phoneNumber, projectStudy, constructionTime, rSchet, kSchet, whatTheWorkForSchet,pochta from contract where organizationName = @organizationName";
                 MySqlCommand command = new MySqlCommand(Query, con);
                 command.Parameters.AddWithValue("@organizationName", text);
                 SDA.SelectCommand = command;
@@ -1082,7 +1082,7 @@ namespace DesignSolutinsProject
                 }
                 else
                 {
-                    textBox24.Text = "Почтовый адрес заказчика";
+                    
                     textBox1.Text = dt.Rows[0][0] + "";
                     textBox10.Text = dt.Rows[0][1] + "";
                     textBox2.Text = dt.Rows[0][2] + "";
@@ -1104,6 +1104,7 @@ namespace DesignSolutinsProject
                     textBox20.Text = dt.Rows[0][18] + "";
                     textBox15.Text = dt.Rows[0][19] + "";
                     textBox14.Text = dt.Rows[0][20] + "";
+                    textBox24.Text = dt.Rows[0][22] + "";
                     if ((string)dt.Rows[0][21] != "")
                     {
                         textBox22.Visible = true;
